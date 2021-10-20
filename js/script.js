@@ -15,11 +15,11 @@
 const arr = [1, 2, 3, -1, -2, -3, `asd`, `0`, `4`];
 function positiveNumbersOnly ( someArray ) {
     const exampleArr = [];
-    if ( someArray.length === 0 ) return console.log(`Transmitted array is empty`);
+    if ( someArray.length === 0 ) return `Transmitted array is empty`;
     for ( let currentPositiveNumber of someArray ) {
         if ( ( Math.sign( currentPositiveNumber ) === 1) && ( typeof( currentPositiveNumber ) === `number` ) ) exampleArr.push( currentPositiveNumber );
     }
-    return exampleArr.length === 0 ? console.log(null) : console.log(exampleArr);
+    return exampleArr.length === 0 ? null : exampleArr;
 }
 positiveNumbersOnly(arr);
 
